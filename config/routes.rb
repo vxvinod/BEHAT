@@ -1,4 +1,13 @@
 Behat::Application.routes.draw do
+  root to:'behats#home'
+  
+  match '/book', to: 'behats#book'
+  match '/help',to: 'behats#help'
+  match '/contact',to: 'behats#contact'
+  match '/aboutus',to: 'behats#aboutus'
+
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
