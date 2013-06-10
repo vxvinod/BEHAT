@@ -9,12 +9,15 @@
 </head>
 <body>
 <%= render 'layouts/header'%>
-
+<% if request.fullpath== "/book"%>
+<%= render 'layouts/sidelinks' %>
+<%end%>
 <div class="container">
 
 <%= yield %>
-<%= render 'layouts/footer' %>
 </div>
+<%= render 'layouts/footer' %>
+
 
 </body>
 
