@@ -5,6 +5,7 @@ Behat::Application.routes.draw do
   match '/help',to: 'behats#help'
   match '/contact',to: 'behats#contact'
   match '/aboutus',to: 'behats#aboutus'
+  match '/createcontent',to: 'behats#createcontent'
 
   
 

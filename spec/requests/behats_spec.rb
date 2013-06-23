@@ -24,5 +24,31 @@ describe "Behats" do
 
   end
 
+  describe "createcontent page" do
+    before{visit createcontent_path}
+
+
+    let(:submit) { "createcontent"}
+    describe "check create content with invalid information" do
+      it "should not create an user" do
+        expect { click_button submit}.not_to change(Behatcont, :count)
+      end
+    end
+
+    describe "check create content with vaid information" do
+
+      before do
+        fill_in "title", with: "Installation"
+        fill_in "content", with: "this is the installation procedure for behat hope u will enjoy the content"
+        fill_in "author",with:"vinod"
+      end
+
+      
+      it "should create a user" do
+        expect { click_button submit }.to change(Behatcont,:count).by(1)
+      end
+    end
+
+  end
   
 end
