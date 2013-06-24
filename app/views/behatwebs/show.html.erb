@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @behatweb.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @behatweb.content.html_safe %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @behatweb.author %>
+</p>
+
+
+<%= link_to 'Edit', edit_behatweb_path(@behatweb) %> |
+<%= link_to 'Back', behatwebs_path %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130622120142) do
+ActiveRecord::Schema.define(:version => 20130623063919) do
 
   create_table "behatblogs", :force => true do |t|
     t.string   "title"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(:version => 20130622120142) do
   end
 
   create_table "behatconts", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "author"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "behatwebs", :force => true do |t|
     t.string   "title"
     t.text     "content"
     t.string   "author"

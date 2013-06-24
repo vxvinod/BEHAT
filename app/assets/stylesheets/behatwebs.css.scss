@@ -1,0 +1,191 @@
+// Place all the styles related to the behatwebs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+$grayMediumLight: #eaeaea;
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* Side links*/
+
+.book-index{
+  width:18%;
+  height:50%;
+  background-color:white;
+  float:left;
+  margin-top:20px;
+  margin-left:30px;
+  border-radius:10px 10px 10px 10px;
+  box-shadow: 0px 0px 5px #999;
+  position:fixed;
+
+
+ ul li
+{
+  text-decoration:none;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px;
+  height:100%;
+  list-style-type:none;
+  margin:5px 5px -1px;
+  display:block;
+  position:absolete;
+}
+a{
+  display:block;
+  margin-left:5px;
+  height:100%;
+  height:auto;
+  text-decoration:none;
+
+&:hover{
+  background-color:#999;
+}
+&:target{
+  background-color:#0088CC;
+  color:#FFFFFF;
+  text-shadow: 0 -1px 0 rga(0,0,0,0.2);
+}
+}
+
+}
+
+/* Book */
+.book-content{
+  width:90%;
+  height:100%;
+  background-color:white;
+  float:right;
+  margin-top:20px;
+  margin-left:5px;
+  border-radius:20px;
+}
+
+.chapter{
+  width:90%;
+  height:50%;
+  background-color:white;
+  float:center;
+  margin-left:7px;
+  margin-left:25px;
+  margin-top:5px;
+  border-radius:10px;
+  border:2px solid #a1a1a1;
+  margin-bottom:10px;
+  padding:10px;
+  box-shadow:10px 10px 15px #999;
+}
+
+.book-image{
+  height:95%;
+  width:95%;
+  border-radius:20px;
+  border: 2px solid grey;
+  box-shadow:0px 0px 15px #999;
+  margin:25px;
+}
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* footer */
+footer  {
+	
+	margin-top:45px;
+	padding-top:5px;
+	border-top:2px solid #eaeaea;
+	color:#999;
+}
+
+footer a{
+	color: #555;
+}
+
+footer a:hover{
+	color:#222;
+
+}
+
+footer small{
+	float :left;
+}
+
+footer ul {
+	float: right;
+	list-style:none;
+}
+
+footer ul li{
+	float: left;
+	margin-left: 10px;
+	
+}
+
+/* forms */
+
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}

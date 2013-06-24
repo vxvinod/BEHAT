@@ -6,7 +6,7 @@ class BehatsController < ApplicationController
   end
 
   def help
-    @chapter=Behatcont.find(2)
+  
   end
 
   def contact
@@ -15,8 +15,6 @@ class BehatsController < ApplicationController
   def aboutus
   end
 
-  def createcontent
-    @cont=Behatcont.new
-  end
+  
   
 end

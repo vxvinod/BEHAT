@@ -3,10 +3,9 @@
 
 <div class="row">
 	<div class="span6 offset3">
-		<%= form_for(@cont) do |f| %>
+		<%= simple_form_for(@cont) do |f| %>
 
-		<%= f.label :title %>
-		<%= f.text_field :titie %>
+	<%= f.input :titie %>
 
 
 		<%= f.label :content %>
@@ -19,7 +18,7 @@
 
 
 
-		<%= f.submit "createcontent", class: "btn btn-large btn-primary" %>
+		<%= f.button :submit "createcontent", class: "btn btn-large btn-primary" %>
 		<% end %>
 	</div>
 </div>
