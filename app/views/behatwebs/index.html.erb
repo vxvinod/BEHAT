@@ -1,0 +1,22 @@
+<% @behatwebs.each do |behatweb| %>
+<div class="book-content">
+<div  class="chapter">
+  <div id=@behat.id >
+    <h2><%= behatweb.title %></h2>
+    
+    <P><%=behatweb.content.html_safe %> </p>
+  <div class="book-image">
+
+  
+
+  <%= image_tag("screenshot.jpg", alt:"simple")%>
+</div>
+
+  <br><br>
+<%= link_to 'show', behatweb, class:"btn btn-primary" %>
+<%= link_to "Edit",edit_behatweb_path(behatweb), class:"btn btn-success" %>
+<%= link_to 'Destroy',behatweb,method: :delete,data: { confirm: 'Are you sure?'} , class:"btn btn-danger"%>
+</div>
+</div>
+</div>
+<% end %>

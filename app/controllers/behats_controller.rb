@@ -6,6 +6,7 @@ class BehatsController < ApplicationController
   end
 
   def help
+  
   end
 
   def contact
@@ -13,5 +14,7 @@ class BehatsController < ApplicationController
 
   def aboutus
   end
+
+  
   
 end

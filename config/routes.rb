@@ -1,10 +1,15 @@
 Behat::Application.routes.draw do
+  resources :behatwebs
+
+
   root to:'behats#home'
   
   match '/book', to: 'behats#book'
   match '/help',to: 'behats#help'
   match '/contact',to: 'behats#contact'
   match '/aboutus',to: 'behats#aboutus'
+  
+  
 
   
 
