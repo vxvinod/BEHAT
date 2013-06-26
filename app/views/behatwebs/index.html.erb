@@ -1,16 +1,14 @@
+
 <% @behatwebs.each do |behatweb| %>
 <div class="book-content">
 <div  class="chapter">
-  <div id=@behat.id >
+  <div id=<%= behatweb.id %> >
+   
     <h2><%= behatweb.title %></h2>
-    
+   
     <P><%=behatweb.content.html_safe %> </p>
-  <div class="book-image">
-
-  
-
-  <%= image_tag("screenshot.jpg", alt:"simple")%>
-</div>
+   
+     
 
   <br><br>
 <%= link_to 'show', behatweb, class:"btn btn-primary" %>

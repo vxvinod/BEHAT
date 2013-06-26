@@ -1,11 +1,13 @@
 <%= simple_form_for(@behatweb) do |f| %>
   <% if @behatweb.errors.any? %>
+
     <div id="error_explanation">
       <h2><%= pluralize(@behatweb.errors.count, "error") %> prohibited this behatweb from being saved:</h2>
 
       <ul>
       <% @behatweb.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
+         
       <% end %>
       </ul>
     </div>

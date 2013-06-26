@@ -5,7 +5,7 @@ class BehatwebsController < ApplicationController
     @behatwebs = Behatweb.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html  # index.html.erb
       format.json { render json: @behatwebs }
     end
   end
@@ -27,8 +27,8 @@ class BehatwebsController < ApplicationController
     @behatweb = Behatweb.new
 
     respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @behatweb }
+      format.html { render :layout => 'default'} # new.html.erb
+      format.json { render json: @behatweb   }
     end
   end
 
@@ -43,12 +43,14 @@ class BehatwebsController < ApplicationController
     @behatweb = Behatweb.new(params[:behatweb])
 
     respond_to do |format|
+     
+
       if @behatweb.save
         format.html { redirect_to @behatweb, notice: 'Behatweb was successfully created.' }
         format.json { render json: @behatweb, status: :created, location: @behatweb }
       else
-        format.html { render action: "new" }
-        format.json { render json: @behatweb.errors, status: :unprocessable_entity }
+        format.html { render action: "new" , :layout => 'default'}
+        format.json { render json: @behatweb.errors, status: :unprocessable_entity ,action: "new"}
       end
     end
   end
