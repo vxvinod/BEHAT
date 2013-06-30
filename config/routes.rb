@@ -1,5 +1,9 @@
 Behat::Application.routes.draw do
-  resources :behatwebs
+  
+
+  resources :behatwebs,:has_many=>[:comments] do
+    resources :comments
+  end
 
 
   root to:'behats#home'
