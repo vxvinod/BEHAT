@@ -3,6 +3,7 @@ class BehatwebsController < ApplicationController
   # GET /behatwebs.json
   def index
     @behatwebs = Behatweb.all
+    @behatweb=Behatweb.find(1)
 
     respond_to do |format|
       format.html  # index.html.erb

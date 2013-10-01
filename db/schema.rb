@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130623063919) do
+ActiveRecord::Schema.define(:version => 20130630080914) do
 
   create_table "behatblogs", :force => true do |t|
     t.string   "title"
@@ -36,5 +36,15 @@ ActiveRecord::Schema.define(:version => 20130623063919) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "comments", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "behatweb_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "comments", ["behatweb_id"], :name => "index_comments_on_behatweb_id"
 
 end
