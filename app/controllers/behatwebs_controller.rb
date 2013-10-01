@@ -3,7 +3,7 @@ class BehatwebsController < ApplicationController
   # GET /behatwebs.json
   def index
     @behatwebs = Behatweb.all
-    @behatweb=Behatweb.find(1)
+    @behatweb=Behatweb.last
 
     respond_to do |format|
       format.html  # index.html.erb
@@ -81,6 +81,17 @@ class BehatwebsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to behatwebs_url }
       format.json { head :no_content }
+    end
+  end
+
+
+  def userview
+    @behatwebs = Behatweb.all
+   
+
+    respond_to do |format|
+      format.html  
+      format.json { render json: @behatwebs }
     end
   end
 end

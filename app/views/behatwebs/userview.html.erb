@@ -1,0 +1,17 @@
+<% @behatwebs.each do |behatweb| %>
+<div class="book-content">
+<div  class="chapter">
+  <div id=<%= behatweb.id %> >
+   
+   <legend> <h2><%= behatweb.title %></h2></legend>
+   
+    <P><%=behatweb.content.html_safe %> </p>
+   
+     
+
+  <br><br>
+
+</div>
+</div>
+</div>
+<% end %>
