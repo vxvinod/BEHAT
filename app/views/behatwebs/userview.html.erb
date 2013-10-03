@@ -3,13 +3,14 @@
 <div  class="chapter">
   <div id=<%= behatweb.id %> >
    
-   <legend> <h2><%= behatweb.title %></h2></legend>
-   
-    <P><%=behatweb.content.html_safe %> </p>
-   
+   <div class="book-img">
+   	<dl>
+    <dt><%= behatweb.title %></dt>
+   	<dd><%=behatweb.content.html_safe %> </dd>
+   </dl>
+    
+   </div>
      
-
-  <br><br>
 
 </div>
 </div>
