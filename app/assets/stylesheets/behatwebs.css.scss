@@ -105,7 +105,7 @@ a{
   word-wrap:break-word;
 }
 
-.chapter{
+.chapter {
   width:90%;
   height:50%;
   background-color:white;
@@ -117,7 +117,7 @@ a{
   border:2px solid #a1a1a1;
   margin-bottom:10px;
   padding:10px;
-  box-shadow:10px 10px 15px #999;
+  box-shadow:5px 5px 5px #999;
 }
 
 .book-image{
@@ -217,17 +217,21 @@ dt{
   cursor: pointer;
     font-weight: bold;
   font-size: 1.5em;
-  background: white;
+  background:#e9f1f4;
   line-height: 2em;
   border-top: 1px solid white;
 border-bottom: 1px solid #C5C5C5;
+border-radius:5px;
+margin: auto;
+
+  
 
 }
 
 dd{
   
   margin: 0;
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 .hide{display:none;}

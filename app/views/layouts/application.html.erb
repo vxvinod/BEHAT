@@ -26,13 +26,29 @@
 
 <script>
 (function(){
+	$('a#start').mouseover(function(){
+		$(this).text("fingers crossed");
+	});
+
+	$('a#start').mouseout(function(){
+		$(this).text("Get Started now !");
+	});
+
+
+	$('a#soon').mouseover(function(){
+		$(this).text("coming soon");
+	});
+
+	$('a#soon').mouseout(function(){
+		$(this).text("Contribute your knowledge");
+	});
 	$('dd').addClass('hide');
 	$('dl').on('click','dt',function(){
 		
 		
 		$('dd').slideUp(400);
 		$(this).next().slideDown(500);
-
+		//$('dd').slideUp(400);
 	});
 })();
 </script>

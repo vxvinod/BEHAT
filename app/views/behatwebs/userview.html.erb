@@ -1,12 +1,16 @@
 <% @behatwebs.each do |behatweb| %>
 <div class="book-content">
 <div  class="chapter">
-  <div id=<%= behatweb.id %> >
+  <div id="id" >
    
    <div class="book-img">
    	<dl>
+   	
+
+   		
     <dt><%= behatweb.title %></dt>
    	<dd><%=behatweb.content.html_safe %> </dd>
+
    </dl>
     
    </div>
