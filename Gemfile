@@ -8,6 +8,7 @@ gem 'rake','10.0.4'
 
 gem 'devise'
 gem 'simple_form'
+gem 'thin'
 
 group :test do
         gem 'shoulda'
