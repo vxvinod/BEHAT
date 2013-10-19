@@ -14,7 +14,7 @@ group :test do
 
 end
 group :development,:test do
-        gem 'sqlite3'
+gem 'sqlite3', '1.3.5'
 end
 
 group :production do
@@ -33,6 +33,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
